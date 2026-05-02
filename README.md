@@ -8,19 +8,19 @@
 # Acknowledgement 
 A huge thank you to [**PCBWay**](https://www.pcbway.com/) for the  manufacturing of our Steering Wheel board. Their support has been invaluable in converting our project into a reliable component for our newest fourth generation solar car. PCBWay provides high-quality PCB manufacturing and assembly services that are excellent for rapid prototyping and custom engineering projects.
 # 2D Front Side View:
-![alt text](image-1.png)
+<img width="1041" height="974" alt="image" src="https://github.com/user-attachments/assets/2f0a1e5c-a6fd-4142-b0b7-197e708d14e9" />
 Figure 1: 2D frontside layout view
 
 # 3D Front Side View:
-![alt text](image-2.png)
+<img width="1088" height="995" alt="image" src="https://github.com/user-attachments/assets/b6559db6-0d04-4c98-84bc-a36738e71ed0" />
 Figure 2: 3D frontside layout of the board design 
 
 # 3D Back Side View:
-![alt text](image-3.png)
+<img width="1256" height="1023" alt="image" src="https://github.com/user-attachments/assets/43f3b53c-82be-4edd-97c4-f1adec99207e" />
 Figure 3: 3D backside layout view
 
 # Front Side:
-![alt text](IMG_2633-1.jpg)
+<img width="2005" height="1785" alt="IMG_2633" src="https://github.com/user-attachments/assets/94b5df92-0b18-44ee-8592-80035a9744cb" />
 Figure 4: image highlighting all of the board's soldered on components
 
 # Overview:
