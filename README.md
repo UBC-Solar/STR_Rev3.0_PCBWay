@@ -9,22 +9,18 @@
 A huge thank you to [**PCBWay**](https://www.pcbway.com/) for the  manufacturing of our Steering Wheel board. Their support has been invaluable in converting our project into a reliable component for our newest fourth generation solar car. PCBWay provides high-quality PCB manufacturing and assembly services that are excellent for rapid prototyping and custom engineering projects.
 # 2D Front Side View:
 ![alt text](image-1.png)
-
 Figure 1: 2D frontside layout view
 
 # 3D Front Side View:
 ![alt text](image-2.png)
-
 Figure 2: 3D frontside layout of the board design 
 
 # 3D Back Side View:
 ![alt text](image-3.png)
-
 Figure 3: 3D backside layout view
 
 # Front Side:
 ![alt text](IMG_2633-1.jpg)
-
 Figure 4: image highlighting all of the board's soldered on components
 
 # Overview:
@@ -40,3 +36,18 @@ The board communicates with other vehicle subsystems via I2C, CAN, and UART prot
 > * **CAN Bus Termination:** Optional on-board split-termination of CAN
 
 # Design Choices:
+The Steering Wheel Board utilizes an STM32 microcontroller (STM32F103RCT6) to interface between the driver and the vehicle’s control systems. Through it's data processing and communication capabilites, the STM32 enables reliable control and monitoring of significant vehicle functions while maintaining robust communication across the car’s network.
+> * Accounts driver inputs including Push-to-Talk, horn activation, cruise control, and regenerative braking through durable, egronomically chosen components and component placement designed to have a racing car feel 
+> * Implements opto-isolation for high-noise and RF signals, protecting all sensitive components and ensuring robust operation in electrically noisy environment
+> * Utilizes the LM66200DRLR ideal diode power switching controller to seamlessly switch between JTAG-based power (for embedded flashing/debugging) and the vehicle’s 12V supply, ensuring seemless power switch and operation 
+> * All input signals are processed through low-pass filters, reducing noise and switch bounce to provide clean, stable readings to the STM32 
+> * Integrates the AS1115-BSST LED driver for the hex display speedometer, offering a compact solution with high speed multiplexing, constant current control, and simplified STM32 interfacing via I2C communication 
+
+# Design Goals & Requirements
+The Steering Wheel Revision 3.0 was designed with robustness, reliability and driver/mechanical satisfaction in mind, specifcally considering:
+> * **Intuative layout And Component Choice:** All component choices and placement is designed to withstand large amount of blunt force and for the driver to easily reach any frequently-used input without lifting their hand
+> * **Board Dimensioning:** Through consistent communication with the Vechile dynamics team of Solar, the boards shaping staisfies all mechanical requirements / maximization for driver feel
+> * **Minimizing Electromagnetic Inference:** Proper measures to isolate high-noise signals and protect sensitve signals, such as through the use of optoisolation 
+
+# Future Improvments
+The Steering Wheel can see improvements through adding more features such as intergrating the driver display, being able to detect the battery level of the supplement battery (power all low voltage boards) and communicate it to the driver display and possilbly hand controlled acceleration on the board. Furthermore, Electromagnetic interferance can be minimized even more by increasing the board layers from 2 to 4 layers.
